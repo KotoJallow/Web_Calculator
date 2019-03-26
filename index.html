@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>Calculator</title>
+	
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body >
+	<script type="text/javascript" src="index.js"></script>
+	<div id="cal" align="center">
+		<form>
+			<input type="text"  id="textview">
+		</form>
+		<table>
+			<tr>
+				<td id="C"><button onclick="setUp('C')" class="button">C</button></td>
+				<td id="bckSpace"><button onclick="setUp('b')"class="button"><--</button></td>
+				<td ><button onclick="setUp('/');" class="button">/</button></td>
+				<td ><button onclick="setUp('*');" class="button">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="setUp(7)" class="button">7</button></td>
+				<td ><button onclick="setUp(8);" class="button">8</button></td>
+				<td ><button onclick="setUp(9);" class="button">9</button></td>
+				<td ><button onclick="setUp('-');"class="button">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="setUp(4);" class="button">4</button></td>
+				<td ><button onclick="setUp(5);" class="button">5</button></td>
+				<td ><button onclick="setUp(6);" class="button">6</button></td>
+				<td><button  onclick="setUp('+');" class="button">+</button></td>
+			</tr>
+			<tr>
+				<td ><button onclick="setUp(1);" class="button">1</button></td>
+				<td ><button onclick="setUp(2);" class="button">2</button></td>
+				<td ><button onclick="setUp(3);" class="button">3</button></td>
+				<td id="equal" onclick="setUp('=')" rowspan="2"><button class="equal">=</button></td>
+			</tr>
+			<tr>
+				<td id="zero" onclick="setUp(0);"colspan="2"><button class="zero">0</button></td>
+				<td ><button onclick="setUp('.');"class="button">.</button></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
