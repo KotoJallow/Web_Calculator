@@ -10,7 +10,12 @@ function setUp(num) {
 				textView.value = textView.value.substring(0,textView.value.length-1);
 				break;
 		case '=':
-				textView.value = eval(textView.value);
+				try{
+					textView.value = eval(textView.value);
+				}catch(err){
+					textView.value = '';
+					alert("Invalid input format");
+				}
 				break;
 		default:
 		textView.value +=  num;
